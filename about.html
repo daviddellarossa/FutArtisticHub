@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>about</title>
+        <meta name="description" content="{{head.description}}">
+        <meta name="keywords" content="{{head.keywords}}">
+        <meta name="author" content="David Della Rossa">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- meta tags are dynamically managed by javascript, this does not hinder search engine crawlers. See this: https://webmasters.googleblog.com/2014/05/understanding-web-pages-better.html -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+        <script src="scripts/content_helper.js"></script>
+        <script src="scripts/about.js"></script>
+        <link rel="stylesheet" href="css/stylesheet.css">
+    </head>
+    <body>
+        <header><!-- dynamically populated by Handlebars from header.hbs --></header>
+        <!--  The content of this page is not rendered by Handlebars because it is meant to be static -->
+        <section>
+            <header>
+                <h1>About</h1>
+            </header>
+            <p><strong>Fut||r[t]istic||Hub</strong> is a community of people interested in technology, art and how technology can help rethink and renew art, hopefully reaching new languages and new ways of expression.</p>
+            <p>We aim to provide a point of aggregation for anyone interested in how the idea we have of the future can materialize in new concepts of art. Act as a hub where different interests can meet and cooperate.</p>
+            <p>A sort of interdisciplinary <dfn title="noun - (in ancient Greece ἀγορά) a public open space used for assemblies and markets.">Agora</dfn> for photographers, painters, programmers, art-lovers, mathematicians, future-lovers, engineers, technology-lovers, where artists will be interested in sharing their ideas, their artefacts and where ultra-technologists can share their code and their algorithms for generative art.</p>
+            <p>Tech-Art-Lovers will find here the right hub where their two passions, technology and art marry and become a new form of expression. They will find information about exhibitions, workshops and collections, when, where and how.</p>
+        </section>
+        <section>
+            <header>
+                <h2>Contact us</h2>
+                <h4>by phone or by email:</h4>
+                <address>
+                    Email: <a href="mailto:info@futartistichub.co.uk">info@futartistichub.co.uk</a><br/>
+                    Tel: <a href="tel:+44020123456789">+44 020 123456789</a>
+                </address>
+                <h4>or sending us a message using the form below:</h4>
+
+                <form action="#">
+                    <div class="empty"></div><span class="align-left">Required fields are marked with an *</span>
+                    <label for="input_title" lang="en">Title</label>
+                        <select id="input_title">
+                            <option>Mr</option>
+                            <option>Mrs</option>
+                            <option>Ms</option>
+                            <option>Prof</option>
+                            <option>Dr</option>
+                            <option>Lord</option>
+                            <option>Rev</option>
+                            <option>Sir</option>
+                        </select>
+
+                        <label for="input_forename" lang="en">First Name*</label>
+                        <input id="input_forename" type="text" required="required" />
+
+                        <label for="input_lastname" lang="en">Last Name*</label>
+                        <input id="input_lastname" type="text" required="required" />
+
+                        <label for="input_email" lang="en">Email*</label>
+                        <input id="input_email" type="email" required="required" />
+
+                        <label for="input_phone" lang="en">Phone Number*</label>
+                        <input id="input_phone" type="tel" required="required" />
+
+                        <label for="input_message" lang="en">Message*</label>
+                        <textarea id="input_message" required="required" placeholder="Your message here" rows="10" cols="60"></textarea>
+
+                        <div class="empty"><!-- for alignment --></div>
+                        <input type="submit" value="Submit" /><!-- Form Submit not implemented -->
+                </form>
+            </header>
+        </section>
+        <footer><!-- dynamically populated by Handlebars from footer.hbs --></footer>
+    </body>
+</html>

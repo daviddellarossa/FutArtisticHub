@@ -1,0 +1,100 @@
+{
+  "head": {
+    "title": "Artworks - FutArtistic Hub",
+    "description": "This web site is meant for a community of people interested in technology, art and how technology can help rethink and renew art, hopefully reaching new languages and new ways of expression.",
+    "keywords": "art, technology, future, artists, photographers, painters, developers, art-lovers, future-lovers, technology-lovers"
+  },
+  "body": {
+    "title": "Artworks",
+    "artworks": [
+      {
+        "id": "lab_art",
+        "title": "Lab/Art",
+        "subtitle": "Interactive Installation Exhibition",
+        "content": "This exhibition showcases a selection of past technology- and human interaction-based art projects between 2013 - 2016",
+        "showcase": false,
+        "media": {
+          "src": "https://www.youtube.com/embed/engJBqJaB6U",
+          "alt": "Lab/Art - Interactive Installation Exhibition"
+        }
+      },
+      {
+        "id": "showreel_drawLight",
+        "title": "Showreel DrawLight",
+        "subtitle": "Immersive & Interactive Digital Art Portfolio 2018",
+        "content": "You'll see a lot of New Media and Immersive storytelling techniques. From 3D Projection Mapping to Virtual and Mixed Reality. There's also some awesome Architectural and Micro Projections, Multitouch Tables, Interactive Walls and of course Augmented reality, too!",
+        "showcase": false,
+        "media": {
+          "src": "https://www.youtube.com/embed/JvVGFPzA9Bw",
+          "alt": "Showreel DrawLight - Immersive & Interactive Digital Art Portfolio 2018"
+        }
+      },
+      {
+        "id": "unnumbered_sparks",
+        "title": "Hi-tech art installation with visual illusions",
+        "subtitle": "Artwork 03 subtitle",
+        "content": "Studio Echelman has presented an installation called the Unnumbered Sparks, where IT systems fully control it and allow users to interact with the installation. This massive installation (created with using 145 miles of twine and spanning over 745 feet) is best viewed in the nighttime and visitors greatly enjoy the ability of controlling the lighting over the installations with their cell phones or portable mobile devices.",
+        "showcase": false,
+        "media": {
+          "src": "https://www.youtube.com/embed/mwS8Aa4y-Wk",
+          "alt": "Hi-tech art installation with visual illusions - the Unnumbered Sparks"
+        }
+      },
+      {
+        "id": "the_tempest",
+        "title": "The Tempest",
+        "subtitle": "Intel's Digital Tech Brings Magic to Shakespeare's The Tempest",
+        "content": "The Royal Shakespeare Company will honor the 400th anniversary of William Shakespeare's death with a groundbreaking production of 'The Tempest' that utilizes Intel's performance capture technology to bring the play's magical characters to life.",
+        "showcase": false,
+        "media": {
+          "src": "https://www.youtube.com/embed/lJokLF0FCeA",
+          "alt": "Hi-tech art installation with visual illusions - the Unnumbered Sparks"
+        }
+      },
+      {
+        "id": "the_tempest_2",
+        "title": "The Tempest",
+        "subtitle": "The Tempest | Cinema Trailer | Royal Shakespeare Company",
+        "content": "In collaboration with Intel and in association with The Imaginarium Studios.",
+        "showcase": false,
+        "media": {
+          "src": "https://www.youtube.com/embed/BZKtQAIE4ew",
+          "alt": "The Tempest | Cinema Trailer | Royal Shakespeare Company"
+        }
+      },
+      {
+        "id": "anatomy",
+        "title": "Anatomy",
+        "subtitle": "Digital sculpture in augmented reality",
+        "content": "Transformation of the work of art into a pure numerical structure and a subsequent representation in a purely technological format, an APPlication - dematerialization and reconstruction in augmented state.",
+        "showcase": false,
+        "media": {
+          "src": "https://www.youtube.com/embed/8L4aPPAqzg8",
+          "alt": "Digital sculpture in augmented reality"
+        }
+      },
+      {
+        "id": "tech_art",
+        "title": "Technology Pushing The Boundaries Of Art",
+        "subtitle": "",
+        "content": "More than ever technology is allowing the boundaries of art to be pushed to their extremities. Dubbed ‘Sky Magic’, advertising company MicroAd has created in Japan, through the use of drones loaded with LED lights, the illusion of fireflies dancing in the dusk with Mount Fuji as their backdrop. Explore how pioneering artists are utilising technological advances in both hardware and software to demonstrate the beauty of the human mind and body.",
+        "showcase": false,
+        "media": {
+          "src": "https://www.youtube.com/embed/hTbo7F5bP0g",
+          "alt": "Technology Pushing The Boundaries Of Art"
+        }
+      },
+      {
+        "id": "borderless",
+        "title": "Borderless, Become Immersed",
+        "subtitle": "MORI Building DIGITAL ART MUSEUM",
+        "content": "teamLab Borderless is a world of artworks without boundaries, a museum without a map created by art collective teamLab. teamLab Borderless is a group of artworks that form one borderless world. Artworks move out of rooms, communicate with other works, influence, and sometimes intermingle with each other with no boundaries. Immerse your body in borderless art in this vast, complex, three-dimensional 10,000 square meter world. Wander, explore with intention, discover, and create a new world with others.",
+        "showca": false,
+        "media": {
+          "src": "https://www.youtube.com/embed/FNr8Gh9jakE",
+          "alt": "Borderless, Become Immersed"
+        }
+      }
+    ]
+  }
+}

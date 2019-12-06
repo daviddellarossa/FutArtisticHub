@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{head.title}}</title>
+        <meta name="description" content="{{head.description}}">
+        <meta name="keywords" content="{{head.keywords}}">
+        <meta name="author" content="David Della Rossa">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- meta tags are dynamically managed by javascript, this does not hinder search engine crawlers. See this: https://webmasters.googleblog.com/2014/05/understanding-web-pages-better.html -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+        <script src="scripts/content_helper.js"></script>
+        <script src="scripts/artist.js"></script>
+        <script src="scripts/slideshow.js"></script>
+        <link rel="stylesheet" href="css/stylesheet.css">
+    </head>
+    <body>
+        <header><!-- dynamically populated by Handlebars from header.hbs --></header>
+        <article id="artist">
+            <!-- this section is dynamically populated by handlebars from the content associated to artist selected -->
+            <script id="artist_hbs" type="text/x-handlebars-template">
+                <div class="slideshow-container" id="showcase">
+                    <!-- for each body.images from the json file... -->
+                    <!-- if the image has the slideshow property set to true it, is to be put into the slideshow -->
+                    {{#each body.images}}
+                    {{#if slideshow}}
+                    <div class="mySlides fade">
+                        <figure>
+                            <img src="{{src}}" alt="{{alt}}" />
+                        </figure>
+                        <div class="text">
+                            <h1>{{@root.body.title}}</h1>
+                            <h2>{{@root.body.subtitle}}</h2>
+                        </div>
+                    </div>
+                    {{/if}}
+                    {{/each}}
+                    <!-- Next and previous buttons to navigate the slideshow-->
+                    <a id="slideshow_prev" class="prev">&#10094;</a>
+                    <a id="slideshow_next" class="next">&#10095;</a>
+                </div>
+                <!-- The dots/circles to navigate the slideshow-->
+                <div style="text-align:center">
+                    {{#each body.images}}<!-- for each image for the slideshow, create a dot under the slideshow -->
+                    {{#if slideshow}}
+                    {{! I need to keep the onclick event inline because I need the @index, which is rendered by Handlebars }}
+                    <span class="dot" data-index="{{@index}}"></span>
+                    {{/if}}
+                    {{/each}}
+                </div>
+                <div id="content">{{{body.content}}}</div><!--content of the article -->
+                <div id="media"><!-- additional media content as youtube links -->
+                    {{#each body.media}}
+                    <iframe width="560" height="315" allowfullscreen frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            src="{{src}}">
+                    </iframe>
+                    {{/each}}
+                </div>
+                <div id="references"><!-- additional references and links of interest -->
+                    <h6>References:</h6>
+                    <ul>
+                        {{#each body.references}}
+                        <li><a href="{{link}}">{{text}}</a></li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </script>
+        </article>
+        <footer><!-- dynamically populated by Handlebars from footer.hbs --></footer>
+    </body>
+</html>

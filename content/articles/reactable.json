@@ -1,0 +1,70 @@
+{
+    "head": {
+        "title": "This is the title for Article 01",
+        "description": "Reactable is a new musical instrument widely used in live performances by many renowned artists",
+        "keywords": "art, technology, future, artists, photographers, painters, developers, art-lovers, future-lovers, technology-lovers"
+    },
+    "body": {
+        "id": "reactable",
+        "title": "Reactable",
+        "subtitle": "Reactable is a new musical instrument widely used in live performances by many renowned artists",
+        "description": "",
+        "content": "<p>Etiam tincidunt mauris a lorem ullamcorper rhoncus. Morbi feugiat sit amet leo sit amet blandit. Cras mollis odio feugiat felis pharetra aliquet. Donec turpis odio, imperdiet id sapien eget, pellentesque posuere neque. Quisque sodales ligula a mauris porta egestas. Donec feugiat metus libero, non dictum sem ultricies id. Fusce massa eros, rhoncus vitae nisl consequat, facilisis venenatis turpis. Nulla facilisi. Cras dapibus quam non lectus mattis, imperdiet tristique urna tristique.</p>\n    <p>Suspendisse feugiat purus at purus consectetur, et eleifend nulla vestibulum. Maecenas nec dui risus. Nunc ut sagittis lorem. Quisque molestie lectus orci, et ullamcorper dui lacinia eget. Pellentesque ex elit, accumsan a nibh vitae, aliquam viverra lorem. Suspendisse cursus augue vel placerat pretium. Donec luctus molestie augue, sed mattis nisi viverra eu. Vivamus faucibus ultrices dui, a egestas orci consectetur vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer faucibus augue vel dolor tincidunt, id elementum nisi pellentesque.</p>\n    <p>Praesent feugiat sagittis quam in semper. Nullam egestas aliquam mauris quis accumsan. Sed eget sodales eros. Nullam consequat lectus enim, in rhoncus nisi fermentum a. Quisque erat dui, vestibulum ut mauris at, placerat commodo est. Sed elementum sem a ipsum dignissim lobortis id at eros. Nunc viverra, arcu eget mollis congue, ipsum felis finibus arcu, a sollicitudin ante odio sit amet arcu. Mauris mollis vestibulum dui sit amet fermentum. Vivamus mi massa, aliquet ut luctus sed, hendrerit nec lacus. Phasellus feugiat augue et velit gravida, ut commodo lorem eleifend. Donec tellus enim, ultrices vel quam sed, lobortis euismod odio. Nunc sed pulvinar ligula. Mauris ultrices vel mi quis blandit.</p>\n    <p>Nam eros ipsum, pellentesque interdum lorem vel, convallis cursus massa. Praesent eu enim at metus porta ullamcorper pellentesque non metus. Phasellus eget urna eros. Morbi in vehicula mi. Fusce fringilla nisl enim, eget ornare massa commodo ac. Pellentesque nec nisl neque. Fusce auctor nulla eget tristique scelerisque. Proin fringilla accumsan nisi ut tincidunt. Maecenas vehicula luctus nunc, in rhoncus tortor. Fusce mattis nunc a sollicitudin elementum. Curabitur pulvinar lacinia risus, vitae fringilla eros consequat et. Cras eu libero ut purus pellentesque dictum eget eu justo. Vivamus euismod urna nec ultrices fermentum. Curabitur ornare placerat lacus, ut aliquet neque elementum sed. Sed in dictum lacus. Nulla urna urna, pretium sed ipsum quis, feugiat pharetra nibh.</p>\n    <figure>\n        <img src=\"./images/articles/reactable/reactable_table.jpg\" alt=\"Picture showing the Reactable table\" />\n        <figcaption>The Reactable Table</figcaption>\n    </figure>\n    <p>Pellentesque porta tortor sed enim euismod convallis. Nam condimentum, enim sit amet posuere sagittis, velit mi finibus dui, in tempor ex enim id lectus. Nam ipsum arcu, vulputate dapibus scelerisque sit amet, accumsan eget est. Maecenas quis mi orci. Ut sem libero, fermentum quis bibendum ut, lacinia a erat. Proin venenatis ac massa ut pellentesque. Nunc vel aliquet odio. Aenean in diam quis lacus accumsan pharetra vitae vitae ante. Praesent eget euismod metus. Aliquam mattis rhoncus feugiat.</p>\n    <p>Fusce nec ultricies ex, eu accumsan justo. Nunc id tortor in libero mattis volutpat non porta lectus. Maecenas maximus orci id efficitur ultricies. Nullam vehicula, risus in aliquam tristique, augue augue dapibus urna, eget euismod nunc dui vitae nibh. Vivamus aliquam quis felis vel aliquet. Aenean consectetur, nisl vel molestie tempus, justo neque lobortis ex, id posuere ipsum nunc sed erat. Nulla facilisi. Vivamus mollis sollicitudin purus et fringilla.</p>\n    <p>Morbi et ultricies nibh. Etiam eget faucibus leo. Phasellus ut tortor semper, tempor sapien at, congue erat. Nulla laoreet ligula eget luctus pellentesque. Phasellus gravida ut arcu ut accumsan. Nulla turpis lacus, efficitur tincidunt odio non, maximus viverra leo. Praesent convallis, justo vitae bibendum eleifend, leo nulla accumsan leo, vitae molestie nisl sem nec sem. Phasellus sodales tempus sollicitudin. Suspendisse fermentum vestibulum massa, et dignissim erat laoreet at.</p>\n    <p>Nullam non tempus sem. Maecenas cursus nunc sit amet convallis eleifend. Proin maximus metus eget elit imperdiet, vel ultrices lorem consectetur. Cras id varius sapien. Ut dolor est, suscipit eget lectus at, mollis dapibus felis. Aenean gravida luctus nulla, sed rhoncus magna suscipit quis. Etiam accumsan lectus quis sem vehicula varius. Integer ut nisl id turpis consectetur pretium. Mauris dictum diam eget sagittis ultricies. Vestibulum eu dolor vitae turpis aliquam porttitor eget ac sem. Nunc semper tortor nec quam pretium sodales. Maecenas odio enim, fringilla eu velit bibendum, volutpat dictum eros. Integer pulvinar ornare est quis suscipit. Curabitur eu neque et nisi sodales aliquam. Curabitur tristique vel lectus eu condimentum. Nunc et sem vitae felis tincidunt maximus.</p>\n    <figure>\n        <img src=\"./images/articles/reactable/reactable_large.jpg\" alt=\"Photo of a musician performing live using Reactable\"/>\n        <figcaption>Musician performing live using Reactable</figcaption>\n    </figure>\n    <p>Fusce erat sapien, hendrerit vel maximus ut, fermentum a nulla. Donec pulvinar placerat justo et cursus. Vestibulum nulla augue, sodales nec orci ut, pharetra ullamcorper turpis. Nullam vulputate leo leo, ut placerat eros facilisis non. Maecenas nec leo maximus, malesuada lectus id, efficitur erat. Vestibulum nec diam pharetra, interdum eros ac, dignissim tellus. Donec cursus, augue tincidunt pulvinar ultrices, lorem ligula lacinia libero, ac ullamcorper sapien augue in ligula. Vivamus tristique, lorem sit amet hendrerit elementum, dui lorem venenatis neque, eget tempus lectus magna vel dui. Vestibulum sit amet purus mi.</p>\n    <p>Suspendisse tincidunt, odio efficitur vulputate hendrerit, neque metus lacinia mi, et sagittis risus mi in metus. Nunc eu libero arcu. Donec quis elementum felis. Suspendisse sit amet cursus enim, id gravida metus. In hac habitasse platea dictumst. Fusce lacinia tellus nibh, id mollis ipsum vulputate aliquam. Phasellus tempor ipsum ac porttitor porta. Donec nec eros et mi laoreet semper.</p>\n    <p>Morbi at odio ut turpis dictum malesuada. Praesent dapibus arcu ipsum, quis imperdiet magna eleifend non. Integer posuere arcu id elit consectetur ultrices. Cras ac libero at orci auctor dictum vitae id tortor. Nulla ornare leo sit amet fermentum mattis. Quisque ullamcorper non massa sit amet molestie. Etiam egestas eros ligula, non tristique risus vestibulum id. Sed vulputate egestas elit id interdum. Mauris sit amet mollis est. Proin a scelerisque elit. Quisque convallis sapien eget nulla accumsan maximus. Donec ut urna sed diam rhoncus mattis. Mauris tristique imperdiet finibus. Vivamus volutpat justo sed tellus aliquam, sit amet elementum mi sagittis.</p>\n    <p>Proin neque nunc, fringilla quis ante vel, bibendum sagittis nisl. Pellentesque dapibus mattis ex, ut consequat ligula egestas et. Praesent consectetur felis lacus. Maecenas eget urna odio. Ut bibendum ultricies neque. Cras efficitur varius tortor et vestibulum. Morbi in leo quis massa rutrum convallis. In tincidunt, arcu id pretium mattis, est nisl auctor libero, sed pellentesque massa velit ut elit. Phasellus pulvinar lobortis ipsum, non pulvinar purus dignissim ac. In non elit arcu. Sed ornare lobortis hendrerit. Ut ornare odio blandit lorem mattis placerat. Aenean nec nisi eget nisl efficitur suscipit id mattis libero. Proin at dui tellus. Donec vehicula nibh tellus, sed pretium justo tristique sed.</p>\n    <figure>\n        <img src=\"./images/articles/reactable/reactable_blocks.jpg\" alt=\"Some blocks on Reactable\"/>\n        <figcaption>Some blocks on Reactable</figcaption>\n    </figure>\n    <p>Duis euismod cursus lacus, in commodo augue tristique in. In pellentesque quam eget arcu porttitor, ac fringilla est malesuada. Nullam a erat eu eros accumsan sagittis. Ut scelerisque vestibulum arcu, in finibus ligula porttitor in. Pellentesque ac quam vitae quam posuere porta blandit vel neque. Phasellus dignissim erat vel libero sagittis, vitae pulvinar est sagittis. Curabitur luctus luctus odio, at finibus enim malesuada vel. Aenean erat elit, lobortis eget varius a, elementum eget felis. Mauris pulvinar leo sit amet dui congue, eu ultricies turpis consequat. Vivamus euismod nisi quis placerat egestas.</p>\n    <p>Sed ultrices tortor nisi, sed accumsan leo ullamcorper quis. Integer tristique dolor placerat tellus condimentum, convallis volutpat nibh lacinia. Etiam non placerat erat, eu lobortis nunc. In in velit nec nibh lobortis elementum. Etiam et nisl tincidunt, dictum eros sit amet, sodales nulla. Vivamus ligula ex, volutpat quis commodo viverra, congue id eros. Sed rhoncus lacus at pellentesque rutrum. Curabitur vel mauris non ipsum euismod suscipit et eget nisi. Ut sed dolor gravida, cursus ante a, tristique felis.</p>\n    <p>Integer ut velit eget nulla pulvinar scelerisque. Mauris commodo arcu ac auctor condimentum. Morbi scelerisque vestibulum velit, a consectetur magna. Pellentesque dignissim, dolor ac mollis mattis, dui elit suscipit lorem, sit amet vestibulum sapien diam vitae est. Vivamus vestibulum eu velit vitae tincidunt. Suspendisse rutrum at nibh quis volutpat. In placerat enim eu nulla commodo dictum. Pellentesque a magna eget erat malesuada viverra. Aliquam condimentum feugiat mauris et vestibulum. Sed in placerat leo.</p>\n    <p>Etiam lacinia aliquam ex eget dictum. Ut facilisis augue dapibus venenatis placerat. Maecenas hendrerit dui id velit lacinia, ut lobortis tellus placerat. Pellentesque faucibus et risus a mattis. Aliquam erat volutpat. Nam at lacus viverra, venenatis lorem sed, luctus odio. Vestibulum in viverra sem, nec pellentesque lorem. Pellentesque et tempus ligula. Proin non dolor neque. Aenean efficitur cursus consequat. Suspendisse ullamcorper nunc tortor, nec tincidunt magna lobortis eu. Curabitur dictum consequat nibh, sit amet sodales eros rutrum at. Ut et eros scelerisque mi lacinia venenatis in nec purus. Proin volutpat ultrices nisl, sed porta diam tincidunt non. Morbi ultricies eros vitae sem congue, vitae vehicula elit vestibulum. Duis fringilla, urna non efficitur commodo, arcu lacus tristique dolor, nec ultrices ipsum enim volutpat neque.</p>",
+        "references": [
+            {
+                "link": "https://reactable.com",
+                "text": "https://reactable.com"
+            },
+            {
+                "link": "https://electronics.howstuffworks.com/gadgets/audio-music/reactable.htm",
+                "text": "https://electronics.howstuffworks.com/gadgets/audio-music/reactable.htm"
+            }
+        ],
+        "media": [
+            {
+                "id": "01",
+                "src": "https://www.youtube.com/embed/nDEoTVz-QCg",
+                "alt": "New reactable LIVE! S6"
+            },
+            {
+                "id": "02",
+                "src": "https://www.youtube.com/embed/jtjNU0Fs3og",
+                "alt": "Reactable Sessions - Matt Robertson"
+            },
+            {
+                "id": "03",
+                "src": "https://www.youtube.com/embed/fNopVaVdqVY",
+                "alt": "Reactable Sessions - Le Freak Selector"
+            },
+            {
+                "id": "04",
+                "src": "https://www.youtube.com/embed/ltjQJz2uz2E",
+                "alt": "ReacTj - Reactable live performance #1"
+            },
+            {
+                "id": "05",
+                "src": "https://www.youtube.com/embed/Mgy1S8qymx0",
+                "alt": "ReacTj - Reactable live performance #2"
+            },
+            {
+                "id": "06",
+                "src": "https://www.youtube.com/embed/psQIFVdLR4A",
+                "alt": "Reactable - SoulFul House Part1 (By Kokab)"
+            }
+        ],
+        "images": [
+            {
+                "id": "00",
+                "src": "./images/articles/reactable/reactable_slideshow.jpg",
+                "alt": "The Reactable Table",
+                "slideshow": true
+            },
+            {
+                "id": "01",
+                "src": "./images/articles/reactable/reactable_in_action.jpg",
+                "alt": "Reactable in action",
+                "slideshow": true
+            }
+        ]
+    }
+}

@@ -1,0 +1,525 @@
+@import url("https://fonts.googleapis.com/css?family=Dosis:400,500,600|IBM+Plex+Mono:300,300i,600,600i&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, label, button, input[type=submit], h1 > a, h1 > a:visited {
+  font-family: "Dosis", sans-serif;
+  color: #25274D;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 600;
+}
+h1 > a {
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 2.5em;
+  font-weight: 600;
+  margin: 0.5em 0;
+}
+
+h4 {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 0.5em 0;
+}
+
+h6 {
+  font-size: 1.25em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+h6::first-letter {
+  font-size: 1.5em;
+}
+
+p {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.5em;
+  font-weight: 300;
+  padding-bottom: 1em;
+  text-align: justify;
+}
+
+a {
+  font-family: "IBM Plex Mono", monospace;
+  color: #4D192E;
+  font-weight: 300;
+  padding-bottom: 1em;
+  text-align: justify;
+}
+
+figure {
+  margin: 0;
+}
+
+article img {
+  width: 100%;
+}
+
+section > header {
+  width: 100%;
+  text-align: center;
+}
+
+address {
+  font-size: 1.5em;
+  padding: 1em;
+  line-height: 2em;
+}
+
+/* ul node within a nav node are for navigation bars */
+nav > ul {
+  padding: 0;
+  list-style: none;
+}
+
+input, select, textarea {
+  padding: 0.8em 1.2em;
+  margin: 0.5em 0;
+}
+
+input[type=submit], button {
+  font-size: larger;
+  padding: 0.5em 1.2em;
+}
+
+div#content {
+  padding-top: 1em;
+}
+div#content figure {
+  width: 50%;
+  float: right;
+  /* figures within articles' content float right */
+  margin: 1.4em;
+}
+div#content figure figcaption {
+  padding-top: 0.5em;
+  font-family: "Dosis", sans-serif;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+div#media {
+  clear: both;
+  /* generally positioned after the content of an article, this clears the figure's floating */
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+  grid-row-gap: 3em;
+  padding-top: 1em;
+}
+div#media iframe {
+  width: 300px;
+  height: 300px;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  div#media {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1599px) {
+  div#media {
+    grid-template-columns: 1fr 1fr;
+  }
+  div#media iframe {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media (min-width: 1600px) {
+  div#media {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  div#media iframe {
+    width: 400px;
+    height: 300px;
+  }
+}
+div#references {
+  padding-top: 1em;
+  clear: both;
+  /* generally positioned after the content of an article, this clears the figure's floating */
+}
+
+.logo img {
+  width: 100%;
+}
+
+body {
+  font-size: 0.6em;
+  padding: 1em;
+  margin: 0;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, #DEDFE3, #CECED4);
+  /* slight gradient on the background */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 2em;
+}
+@media (min-width: 1024px) and (max-width: 1599px) {
+  body {
+    font-size: 1em;
+    padding: 0 6em;
+  }
+}
+@media (min-width: 1600px) {
+  body {
+    font-size: 1em;
+    padding: 0 6em;
+  }
+}
+body > header {
+  background-color: #464866;
+  padding: 1em;
+}
+body > header > nav > ul {
+  /* the following for block generates styles for each of the li of the ul, defining the grid-area attribute. This will be needed to format the grid*/
+  display: grid;
+  justify-content: space-around;
+  align-items: center;
+  justify-items: center;
+  grid-gap: 2em;
+  grid-template-areas: "li3 li3" "li1 li2" "li4 li5";
+  /* the third item is the logo */
+}
+body > header > nav > ul li:nth-child(1) {
+  grid-area: li1;
+}
+body > header > nav > ul li:nth-child(2) {
+  grid-area: li2;
+}
+body > header > nav > ul li:nth-child(3) {
+  grid-area: li3;
+}
+body > header > nav > ul li:nth-child(4) {
+  grid-area: li4;
+}
+body > header > nav > ul li:nth-child(5) {
+  grid-area: li5;
+}
+body > header > nav > ul li a {
+  font-size: 2em;
+  color: #EAEBEB;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  body > header > nav > ul {
+    grid-template-areas: "li3 li3 li3 li3" "li1 li2 li4 li5";
+    /* the third item is the logo */
+  }
+}
+@media (min-width: 1024px) and (max-width: 1599px) {
+  body > header > nav > ul {
+    grid-template-areas: "li1 li2 li3 li3 li4 li5";
+    /* the third item is the logo */
+  }
+  body > header > nav > ul > li > a {
+    font-size: 1.25em;
+    transition: font-size 0.2s;
+    /* this slightly enlarges the top menu items when hovered */
+  }
+  body > header > nav > ul > li > a:hover {
+    font-size: 1.5em;
+  }
+}
+@media (min-width: 1600px) {
+  body > header > nav > ul {
+    grid-template-areas: "li1 li2 li3 li3 li4 li5";
+    /* the third item is the logo */
+  }
+  body > header > nav > ul > li > a {
+    font-size: 1.25em;
+    transition: font-size 0.2s;
+  }
+  body > header > nav > ul > li > a:hover {
+    font-size: 1.5em;
+  }
+}
+body > main > header {
+  width: 100%;
+  text-align: center;
+}
+body > main img {
+  width: 100%;
+}
+body > main > section > h2 {
+  display: none;
+}
+@media (min-width: 1024px) and (max-width: 1599px) {
+  body > main > section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    grid-row-gap: 6em;
+    grid-column-gap: 4em;
+    padding: 4em;
+  }
+}
+@media (min-width: 1600px) {
+  body > main > section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+    grid-row-gap: 6em;
+    grid-column-gap: 4em;
+    padding: 4em;
+  }
+}
+body > main > section article div iframe {
+  width: 100%;
+  height: 450px;
+}
+body > footer {
+  padding-bottom: 6em;
+  background-color: #464866;
+}
+body > footer > nav > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2em;
+  justify-items: center;
+}
+body > footer > nav > ul img {
+  width: 3em;
+  height: 3em;
+}
+body > footer > nav > ul li:last-child {
+  /*align the last element of seven centered */
+  grid-area: 3/1/span 1/span 3;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  body > footer > nav > ul {
+    /* dispose the 7 elements in a single row of 7columns */
+    grid-template-columns: repeat(7, 1fr);
+  }
+  body > footer > nav > ul li:last-child {
+    /* reset the basic settings for the last element */
+    grid-area: auto;
+  }
+  body > footer > nav > ul img {
+    width: 3.5em;
+    height: 3.5em;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1599px) {
+  body > footer > nav > ul {
+    /* dispose the 7 elements in a single row of 7columns */
+    grid-template-columns: repeat(7, 1fr);
+  }
+  body > footer > nav > ul li:last-child {
+    /* reset the basic settings for the last element */
+    grid-area: auto;
+  }
+  body > footer > nav > ul img {
+    width: 4em;
+    height: 4em;
+  }
+}
+@media (min-width: 1600px) {
+  body > footer > nav > ul {
+    /* dispose the 7 elements in a single row of 7columns */
+    grid-template-columns: repeat(7, 1fr);
+  }
+  body > footer > nav > ul li:last-child {
+    /* reset the basic settings for the last element */
+    grid-area: auto;
+  }
+  body > footer > nav > ul img {
+    width: 4em;
+    height: 4em;
+  }
+}
+body > footer > nav > h4 {
+  width: 100%;
+  font-weight: 500;
+  text-align: center;
+  padding: 1em;
+  color: #EAEBEB;
+}
+
+form {
+  padding: 2em;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  row-gap: 0.5em;
+  column-gap: 1em;
+  font-size: 2em;
+}
+form .align-right {
+  justify-self: right;
+}
+form label,
+form .align-left {
+  justify-self: left;
+}
+form span {
+  font-family: "IBM Plex Mono", monospace;
+}
+form input,
+form select,
+form textarea {
+  justify-self: left;
+  border: 1px solid #00F;
+  border-radius: 0.5em;
+}
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-width: 0.2em;
+  border-color: #F00;
+}
+form input:not([type=submit]),
+form select,
+form textarea {
+  width: 100%;
+  max-width: 40em;
+}
+@media (min-width: 1024px) and (max-width: 1599px) {
+  form {
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.5em;
+  }
+  form label {
+    justify-self: right;
+  }
+}
+@media (min-width: 1600px) {
+  form {
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.5em;
+  }
+  form label {
+    justify-self: right;
+  }
+}
+
+/* Slideshow container */
+/* The following code has been inspired by an example found on W3Schools
+ https://www.w3schools.com/howto/howto_js_slideshow.asp
+ */
+.slideshow-container {
+  position: relative;
+}
+@media (min-width: 1024px) and (max-width: 1599px) {
+  .slideshow-container {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+@media (min-width: 1600px) {
+  .slideshow-container {
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Back and Forward buttons */
+.prev, .next {
+  border-radius: 0 0.2em 0.2em 0;
+  color: #F00;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 2em;
+  margin-top: -1.4em;
+  padding: 1em;
+  position: absolute;
+  top: 50%;
+  transition: 0.6s ease;
+  user-select: none;
+  width: auto;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 0.2em 0 0 0.2em;
+}
+
+/* On hover, add a black background color with a little transparency*/
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Text on the slideshow */
+.text {
+  text-align: center;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), white);
+  /* semitransparent white background to better highlight the title */
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+.text h2 {
+  display: none;
+}
+@media (min-width: 1024px) and (max-width: 1599px) {
+  .text h2 {
+    display: block;
+  }
+}
+@media (min-width: 1600px) {
+  .text h2 {
+    display: block;
+  }
+}
+
+/* The indicators under the slideshow  */
+.dot {
+  background-color: #464866;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 1.2em;
+  width: 1.2em;
+  margin: 1em;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #F00;
+}
+
+/* Fading animation when transitioning between images of the slideshow */
+.fade {
+  animation-name: fading;
+  animation-duration: 1.5s;
+  -webkit-animation-name: fading;
+  -webkit-animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fading {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fading {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=stylesheet.css.map */

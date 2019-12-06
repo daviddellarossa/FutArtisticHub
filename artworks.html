@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{head.title}}</title>
+        <meta name="description" content="{{head.description}}">
+        <meta name="keywords" content="{{head.keywords}}">
+        <meta name="author" content="David Della Rossa">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- meta tags are dynamically managed by javascript, this does not hinder search engine crawlers. See this: https://webmasters.googleblog.com/2014/05/understanding-web-pages-better.html -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+        <script src="scripts/content_helper.js"></script>
+        <script src="scripts/artworks.js"></script>
+        <link rel="stylesheet" href="css/stylesheet.css">
+    </head>
+    <body>
+        <header><!-- dynamically populated by Handlebars from header.hbs --></header>
+        <main id="artworks">
+            <script id="artworks_hbs" type="text/x-handlebars-template">
+                <!-- this section is dynamically populated by handlebars based on the number of artworks to show -->
+                <header>
+                    <h1>Artworks</h1>
+                </header>
+                <section>
+                    <h2>Selection of Artworks</h2>
+                    {{#each body.artworks}}<!-- for each body.artworks from the json file... -->
+                    <article>
+                        <div>
+                            <iframe allowfullscreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    src="{{media.src}}">
+                            </iframe>
+                        </div>
+                        <header>
+                            <h3></a>{{title}}</h3>
+                            {{#if subtitle}}
+                            <h4>{{subtitle}}</h4>
+                            {{/if}}
+                        </header>
+                        <p>{{{content}}}</p>
+                    </article>
+                    {{/each}}
+                </section>
+            </script>
+        </main>
+        <footer><!-- dynamically populated by Handlebars from footer.hbs --></footer>
+    </body>
+</html>

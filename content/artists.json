@@ -1,0 +1,85 @@
+{
+  "head": {
+    "title": "Artists - FutArtistic Hub",
+    "description": "This web site is meant for a community of people interested in technology, art and how technology can help rethink and renew art, hopefully reaching new languages and new ways of expression.",
+    "keywords": "art, technology, future, artists, photographers, painters, developers, art-lovers, future-lovers, technology-lovers"
+  },
+  "body": {
+    "title": "Artists",
+    "artists": [
+      {
+        "id": "brooke_shaden",
+        "name": "Brooke Shaden",
+        "slideshow": true,
+        "images": [
+          {
+            "id": "01",
+            "src": "./images/artists/brooke_shaden/brooke_shaden_01_slideshow.jpg",
+            "alt": "Surreal picture of a woman with an upside-down umbrella on her head, in a seascape"
+          }
+        ]
+      },
+      {
+        "id": "david_della_rossa",
+        "name": "David Della Rossa",
+        "slideshow": true,
+        "images": [
+          {
+            "id": "01",
+            "src": "./images/artists/david_della_rossa/david_della_rossa_01_slideshow.jpg",
+            "alt": "Landscape, colour chemigram digitally processed"
+          }
+        ]
+      },
+      {
+        "id": "joshua_stanton",
+        "name": "Joshua Stanton",
+        "slideshow": false,
+        "images": [
+          {
+            "id": "01",
+            "src": "./images/artists/joshua_stanton/joshua_stanton_00_slideshow.jpg",
+            "alt": "Deep Neural Painting by Joshua Stanton"
+          }
+        ]
+      },
+      {
+        "id": "ant_scott",
+        "name": "Ant Scott",
+        "slideshow": false,
+        "images": [
+          {
+            "id": "01",
+            "src": "./images/artists/ant_scott/ant_scott_01_slideshow.jpg",
+            "alt": "Picture of Linmouth with digital glitches"
+          }
+        ]
+      },
+      {
+        "id": "mariah_robertson",
+        "name": "Mariah Robertson",
+        "slideshow": false,
+        "images": [
+          {
+            "id": "01",
+            "src": "./images/artists/mariah_robertson.jpg",
+            "alt": "Picture of a chemigram by Mariah Robertson"
+          }
+        ]
+      },
+      {
+        "id": "mick_gordon",
+        "name": "Mick Gordon",
+        "slideshow": false,
+        "images": [
+          {
+            "id": "01",
+            "src": "./images/artists/mick_gordon.jpg",
+            "alt": "Picture of Mick Gordon playing the guitar"
+          }
+        ]
+      }
+
+    ]
+  }
+}

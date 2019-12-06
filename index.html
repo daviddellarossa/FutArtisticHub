@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{head.title}}</title>
+        <meta name="description" content="{{head.description}}">
+        <meta name="keywords" content="{{head.keywords}}">
+        <meta name="author" content="David Della Rossa">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <!-- meta tags are dynamically managed by javascript, this does not hinder search engine crawlers. See this: https://webmasters.googleblog.com/2014/05/understanding-web-pages-better.html -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+        <script src="scripts/content_helper.js"></script>
+        <script src="scripts/index.js"></script>
+        <script src="scripts/slideshow.js"></script>
+        <link rel="stylesheet" href="css/stylesheet.css">
+    </head>
+    <body>
+        <header><!-- dynamically populated by Handlebars from header.hbs --></header>
+        <main id="articles">
+            <script id="articles_hbs" type="text/x-handlebars-template">
+                <!-- this section is dynamically populated by handlebars based on the number of articles to show -->
+                <div class="slideshow-container" id="showcase">
+                    {{#each body.articles}}<!-- for each body.articles from the json file... -->
+                    {{#if showcase}} <!-- if the article has the slideshow property set to true it, is to be put into the slideshow -->
+                    <div class="mySlides fade">
+                        <figure>
+                            <a href="./article.html?page={{id}}">
+                                <img src="{{images.0.src}}" alt="{{images.0.alt}}" /><!-- pick the first image in the article's section from the json file -->
+                            </a>
+                        </figure>
+                        <div class="text">
+                            <h1><a href="./article.html?page={{id}}">{{title}}</a></h1>
+                            <h2>{{subtitle}}</h2>
+                        </div>
+                    </div>
+                    {{/if}}
+                    {{/each}}
+                    <!-- Next and previous buttons to navigate the slideshow-->
+                    <a id="slideshow_prev" class="prev">&#10094;</a>
+                    <a id="slideshow_next" class="next">&#10095;</a>
+                </div>
+                <!-- The dots/circles to navigate the slideshow-->
+                <div style="text-align:center">
+                    {{#each body.articles}}
+                    {{#if showcase}}
+                    <span class="dot" data-index="{{@index}}"></span>
+                    {{/if}}
+                    {{/each}}
+                </div>
+                <section>
+                    <h2>Articles</h2>
+                    <!-- for all other articles in the json file not checked for the slideshow... -->
+                    {{#each body.articles}}
+                    {{#unless showcase}}
+                    <article>
+                        <figure>
+                            <a href="article.html?page={{id}}">
+                                <img src="{{images.0.src}}" alt="{{ images.0.alt}}" />
+                            </a>
+                        </figure>
+                        <header>
+                            <h3>{{title}}</h3>
+                            <h4>{{subtitle}}</h4>
+                        </header>
+                    </article>
+                    {{/unless}}
+                    {{/each}}
+                </section>
+            </script>
+        </main>
+        <footer><!-- dynamically populated by Handlebars from footer.hbs --></footer>
+    </body>
+</html>

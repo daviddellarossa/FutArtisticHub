@@ -1,0 +1,536 @@
+$font-family_1: 'Dosis', sans-serif; //used mainly for titles
+$font-family_2: 'IBM Plex Mono', monospace; //used mainly for normal text
+
+$color_1: #25274D; //used for h1, h2, h3, h4, h5, h6, label, button, input[type='submit']
+$color_2: #DEDFE3; //used in background gradient for color1
+$color_3: #CECED4; //used in background gradient for color2
+$color_4: #464866; //used for footer
+$color_5: #EAEBEB; //used for footer>nav>h4
+$color_6: #F00; //used for borders in forms' inputs on focus
+$color_7: #00F; //used for borders in forms' inputs
+$color_10: #4D192E; //used for a
+
+//load the fonts
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,500,600|IBM+Plex+Mono:300,300i,600,600i&display=swap');
+
+//set the breakpoints for the media definitions
+$phone-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$wide-desktop-width: 1600px;
+
+//mixin defining the media definitions
+//---------------------------------------------------------------------------------
+@mixin phone {
+  @media (min-width: #{$phone-width}) and (max-width: #{$tablet-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width})and (max-width: #{$wide-desktop-width - 1px}) {
+    @content;
+  }
+}
+@mixin wide-desktop {
+  @media (min-width: #{$wide-desktop-width}) {
+    @content;
+  }
+}
+//--------------------------------------------------------------------------------
+
+* {
+  box-sizing:border-box
+}
+
+h1, h2, h3, h4, h5, h6, label, button, input[type='submit'], h1>a, h1>a:visited{
+  font-family: $font-family_1;
+  color: $color_1;
+}
+h1{
+  font-size: 4em;
+  font-weight: 600;
+  >a{
+    font-weight: 600;
+  }
+}
+h2{
+  font-size: 2.5em;
+  font-weight: 400;
+}
+h3{
+  font-size: 2.5em;
+  font-weight: 600;
+  margin: 0.5em 0;
+}
+h4{
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 0.5em 0;
+}
+h6{
+  font-size: 1.25em;
+  font-weight: 600;
+  text-transform: uppercase;
+  &::first-letter{
+    font-size: 1.5em;
+  }
+}
+p{
+  font-family: $font-family_2;
+  font-size: 1.5em;
+  font-weight: 300;
+  padding-bottom: 1em;
+  text-align: justify;
+}
+a{
+  font-family: $font-family_2;
+  color: $color_10;
+  font-weight: 300;
+  padding-bottom: 1em;
+  text-align: justify;
+}
+
+figure{
+  margin: 0;
+}
+
+article img{
+  width: 100%;
+}
+section>header{
+  width:100%;
+  text-align: center;
+}
+address {
+  font-size: 1.5em;
+  padding: 1em;
+  line-height: 2em;
+}
+/* ul node within a nav node are for navigation bars */
+nav > ul{
+  padding: 0;
+  list-style: none;
+}
+input, select, textarea {
+  padding: 0.8em 1.2em;
+  margin: 0.5em 0;
+}
+input[type='submit'], button{
+  font-size: larger;
+  padding: 0.5em 1.2em;
+}
+div{
+  &#content{
+    padding-top: 1em;
+    figure{
+      width: 50%;
+      float: right; /* figures within articles' content float right */
+      margin: 1.4em;
+      figcaption{
+        padding-top: 0.5em;
+        font-family: $font-family_1;
+        font-size: 1.4em;
+        font-weight: 500;
+      }
+    }
+  }
+  &#media{
+    clear: both; /* generally positioned after the content of an article, this clears the figure's floating */
+    display:grid;
+    grid-template-columns: 1fr;
+    justify-content: space-around;
+    align-items: center;
+    justify-items: center;
+    grid-row-gap: 3em;
+    padding-top: 1em;
+    iframe{
+      width: 300px;
+      height: 300px;
+    }
+
+    @include tablet{
+      grid-template-columns: 1fr 1fr;
+    }
+    @include desktop{
+      grid-template-columns: 1fr 1fr;
+      iframe{
+        width: 400px;
+        height: 400px;
+      }
+    }
+    @include wide-desktop{
+      grid-template-columns: 1fr 1fr 1fr;
+      iframe{
+        width: 400px;
+        height: 300px;
+      }
+    }
+  }
+  &#references{
+    padding-top: 1em;
+    clear: both; /* generally positioned after the content of an article, this clears the figure's floating */
+  }
+}
+.logo{
+  img{
+    width: 100%;
+  }
+}
+body{
+  font-size: 0.6em;
+  padding: 1em;
+  margin: 0;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, $color_2, $color_3); /* slight gradient on the background */
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 2em;
+  @include desktop{
+    font-size: 1em;
+    padding: 0 6em;
+  }
+  @include wide-desktop{
+    font-size: 1em;
+    padding: 0 6em;
+  }
+  >header{
+    background-color: $color_4;
+    padding: 1em;
+    >nav{
+      >ul{
+        /* the following for block generates styles for each of the li of the ul, defining the grid-area attribute. This will be needed to format the grid*/
+        @for $i from 1 to 6{
+          li:nth-child(#{$i}){
+            grid-area: li#{$i};
+          }
+        }
+        display:grid;
+        justify-content: space-around;
+        align-items: center;
+        justify-items: center;
+        grid-gap: 2em;
+        grid-template-areas:
+                'li3 li3'
+                'li1 li2'
+                'li4 li5'; /* the third item is the logo */
+        li{
+          a{
+            font-size: 2em;
+            color: $color_5;
+          }
+        }
+        @include tablet{
+          grid-template-areas:
+                  'li3 li3 li3 li3'
+                  'li1 li2 li4 li5'; /* the third item is the logo */
+        }
+        @include desktop {
+          grid-template-areas: 'li1 li2 li3 li3 li4 li5'; /* the third item is the logo */
+          > li {
+            > a {
+              font-size: 1.25em;
+              transition: font-size 0.2s; /* this slightly enlarges the top menu items when hovered */
+              &:hover {
+                font-size: (1.25em * 1.2);
+              }
+            }
+          }
+        }
+        @include wide-desktop {
+          grid-template-areas: 'li1 li2 li3 li3 li4 li5'; /* the third item is the logo */
+          > li {
+            > a {
+              font-size: 1.25em;
+              transition: font-size 0.2s;
+              &:hover {
+                font-size: (1.25em * 1.2);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  >main{
+    >header{
+      width:100%;
+      text-align: center;
+    }
+    img{
+      width: 100%;
+    }
+    >section{
+      >h2{
+        display: none;
+      }
+      @include desktop {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-evenly;
+        grid-row-gap: 6em;
+        grid-column-gap: 4em;
+        padding:4em;
+      }
+      @include wide-desktop {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-evenly;
+        grid-row-gap: 6em;
+        grid-column-gap: 4em;
+        padding:4em;
+      }
+      article{
+        div{
+          iframe{
+            width: 100%;
+            height: 450px;
+          }
+        }
+      }
+    }
+  }
+  >footer{
+    padding-bottom: 6em;
+    background-color: $color_4;
+    >nav{
+      >ul{
+        img{
+          width:3em;
+          height:3em;
+        }
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2em;
+        justify-items: center;
+
+
+        li:last-child{
+          /*align the last element of seven centered */
+          grid-area: 3 / 1 / span 1 / span 3;
+        }
+
+        @include tablet{
+          /* dispose the 7 elements in a single row of 7columns */
+          grid-template-columns: repeat(7, 1fr);
+          li:last-child {
+            /* reset the basic settings for the last element */
+            grid-area: auto;
+          }
+          img{
+            width:3.5em;
+            height: 3.5em;
+          }
+        }
+
+        @include desktop{
+          /* dispose the 7 elements in a single row of 7columns */
+          grid-template-columns: repeat(7, 1fr);
+          li:last-child {
+            /* reset the basic settings for the last element */
+            grid-area: auto;
+          }
+
+          img{
+            width:4em;
+            height: 4em;
+          }
+        }
+        @include wide-desktop{
+          /* dispose the 7 elements in a single row of 7columns */
+          grid-template-columns: repeat(7, 1fr);
+          li:last-child {
+            /* reset the basic settings for the last element */
+            grid-area: auto;
+          }
+
+          img{
+            width:4em;
+            height: 4em;
+          }
+        }
+      }
+      >h4{
+        width: 100%;
+        font-weight: 500;
+        text-align: center;
+        padding: 1em;
+        color: $color_5;
+      }
+    }
+  }
+}
+form{
+  padding: 2em;
+  display:grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  row-gap: 0.5em;
+  column-gap: 1em;
+  font-size: 2em;
+  .align-right
+  {
+    justify-self: right;
+  }
+  label,
+  .align-left
+  {
+    justify-self: left;
+  }
+  span{
+    font-family: $font-family_2;
+  }
+  input,
+  select,
+  textarea{
+    justify-self: left;
+    border: 1px solid $color_7;
+    border-radius: 0.5em;
+    &:focus{
+      border-width: 0.2em;
+      border-color: $color_6;
+    }
+  }
+
+  input:not([type='submit']), /* extend all the form control, but the submit, to occupy up to 40em */
+  select,
+  textarea{
+    width: 100%;
+    max-width: 40em;
+  }
+
+  @include desktop{
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.5em;
+    label
+    {
+      justify-self: right;
+    }
+  }
+
+  @include  wide-desktop{
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.5em;
+    label
+    {
+      justify-self: right;
+    }
+  }
+}
+
+
+/* Slideshow container */
+/* The following code has been inspired by an example found on W3Schools
+ https://www.w3schools.com/howto/howto_js_slideshow.asp
+ */
+
+.slideshow-container {
+  position: relative;
+
+  @include desktop{
+    max-width: 80%;
+    margin: auto;
+  }
+  @include wide-desktop{
+    max-width: 80%;
+    margin: auto;
+  }
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Back and Forward buttons */
+.prev, .next {
+  border-radius: 0 0.2em 0.2em 0;
+  color: $color_6;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 2em;
+  margin-top: -1.4em;
+  padding: 1em;
+  position: absolute;
+  top: 50%;
+  transition: 0.6s ease;
+  user-select: none;
+  width: auto;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 0.2em 0 0 0.2em;
+}
+
+/* On hover, add a black background color with a little transparency*/
+.prev:hover,
+.next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Text on the slideshow */
+.text {
+  text-align: center;
+  background-image: linear-gradient(rgba(255,255,255, 0.1), rgba(255,255,255,1)); /* semitransparent white background to better highlight the title */
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  h2{
+    display: none;
+  }
+
+  @include desktop{
+    h2{
+      display: block;
+    }
+  }
+
+  @include wide-desktop{
+    h2{
+      display: block;
+    }
+  }
+}
+
+/* The indicators under the slideshow  */
+.dot {
+  background-color: $color_4;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 1.2em;
+  width: 1.2em;
+  margin: 1em;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: $color_6;
+}
+
+/* Fading animation when transitioning between images of the slideshow */
+.fade {
+  animation-name: fading;
+  animation-duration: 1.5s;
+  -webkit-animation-name: fading;
+  -webkit-animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fading {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fading {
+  from {opacity: .4}
+  to {opacity: 1}
+}

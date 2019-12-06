@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{{head.title}}</title>
+        <meta name="description" content="{{head.description}}">
+        <meta name="keywords" content="{{head.keywords}}">
+        <meta name="author" content="David Della Rossa">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- meta tags are dynamically managed by javascript, this does not hinder search engine crawlers. See this: https://webmasters.googleblog.com/2014/05/understanding-web-pages-better.html -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+        <script src="scripts/content_helper.js"></script>
+        <script src="scripts/artists.js"></script>
+        <script src="scripts/slideshow.js"></script>
+        <link rel="stylesheet" href="css/stylesheet.css">
+    </head>
+    <body>
+        <header><!-- dynamically populated by Handlebars from header.hbs --></header>
+        <main id="artists">
+            <!-- this section is dynamically populated by handlebars based on the number of artworks to show -->
+            <script id="artists_hbs" type="text/x-handlebars-template">
+                <div class="slideshow-container" id="showcase">
+                    <!-- for each body.artists from the json file... -->
+                    <!-- if the artist has the slideshow property set to true it, is to be put into the slideshow -->
+                    {{#each body.artists}}
+                    {{#if slideshow}}
+                    <div class="mySlides fade">
+                        <figure>
+                            <a href="./artist.html?page={{id}}">
+                                <img src="{{images.0.src}}" alt="{{images.0.alt}}" /><!-- pick the first image in the artist's section from the json file -->
+                            </a>
+                        </figure>
+                        <div class="text">
+                            <h1><a href="./artist.html?page={{id}}">{{name}}</a></h1>
+                        </div>
+                    </div>
+                    {{/if}}
+                    {{/each}}
+                    <!-- Next and previous buttons to navigate the slideshow-->
+                    <a id="slideshow_prev" class="prev">&#10094;</a>
+                    <a id="slideshow_next" class="next">&#10095;</a>
+                </div>
+                <!-- The dots/circles to navigate the slideshow-->
+                <div style="text-align:center">
+                    {{#each body.artists}}<!-- for each artist for the slideshow, create a dot under the slideshow -->
+                    {{#if slideshow}}
+                    <span class="dot" data-index="{{@index}}"></span>
+                    {{/if}}
+                    {{/each}}
+                </div>
+                <section>
+                    <h2>Artists</h2>
+                    <!-- for all other artists in the json file not checked for the slideshow... -->
+                    {{#each body.artists }}
+                    {{#unless slideshow}}
+                        <article>
+                            <figure>
+                                <a href="./artist.html?page={{id}}">
+                                    <img src="{{ images.0.src }}" alt="{{ images.0.alt }}" />
+                                </a>
+                            </figure>
+                            <header>
+                                <h2>{{name}}</h2>
+                            </header>
+                        </article>
+                    {{/unless}}
+                    {{/each}}
+                </section>
+            </script>
+            </main>
+        <footer><!-- dynamically populated by Handlebars from footer.hbs --></footer>
+    </body>
+</html>

@@ -1,0 +1,98 @@
+{
+  "head": {
+    "title": "FutArtistic Hub",
+    "description": "This web site is meant for a community of people interested in technology, art and how technology can help rethink and renew art, hopefully reaching new languages and new ways of expression.",
+    "keywords": "art, technology, future, artists, photographers, painters, developers, art-lovers, future-lovers, technology-lovers"
+  },
+  "body": {
+    "title": "Fut||rtistic||Hub",
+    "articles": [
+      {
+        "id": "reactable",
+        "title": "Reactable",
+        "subtitle": "A new way of conceiving a music live performance",
+        "description": "The Reactable is a revolutionary collaborative instrument composed of a round, translucent table that is usually situated in a dark room. The table is lit up, and blocks called &quot;tangibles&quot; are placed on the table by performers. The tangibles represent different modules of a synthesizer (such as sequencers and VCOs). Performers then manipulate the tangibles on the Reactable to create a custom digital song. As the tangibles move, they create motions and light movements on the table, making the Reactable both an instrument and visual display.",
+        "showcase": true,
+        "images": [
+          {
+            "id": "01",
+            "type": "image",
+            "src": "./images/articles/reactable/reactable_slideshow.jpg",
+            "alt": "The Reactable table"
+          }
+        ]
+      },
+      {
+        "id": "AI_Mario_Klingemann",
+        "title": "Artificial Intelligence and the Art of Mario Klingemann",
+        "subtitle": "Mario Klingemann is a German artist and Google Arts and Culture resident known for his work involving neural networks, code, and algorithms.",
+        "description": "He is considered a pioneer in the use of computer learning in the arts. His works examine creativity, culture, and perception through machine learning and artificial intelligence, and have appeared at the Ars Electronica Festival, the Museum of Modern Art New York, the Metropolitan Museum of Art New York, the Photographers’ Gallery London, the Centre Pompidou Paris, and the British Library.",
+        "showcase": true,
+        "images": [
+          {
+            "id": "01",
+            "src": "./images/articles/AI_Mario_Klingemann/img2_slideshow.jpg",
+            "alt": "alternative text for image 1 of article 2"
+          }
+        ]
+      },
+      {
+        "id": "AI_painters",
+        "title": "Artificial Intelligence painters",
+        "subtitle": "Artificially intelligent painters invent new styles of art.",
+        "description": "An artificial intelligence has been developed that produces images in unconventional styles and much of its output has already been given the thumbs up by members of the public.",
+        "showcase": false,
+        "images": [
+          {
+            "id": "01",
+            "src": "./images/articles/AI_painters/ai_painters_01.jpg",
+            "alt": "Paint of a sunflower through the eyes of Artificial Intelligence"
+          }
+        ]
+      },
+      {
+        "id": "art_01",
+        "title": "Modular Synthesizer",
+        "subtitle": "10 ideas to get the best possible sounds from your setup.",
+        "description": "",
+        "showcase": false,
+        "images": [
+          {
+            "id": "01",
+            "src": "./images/articles/modular_synth.jpg",
+            "alt": "This is a fake link"
+          }
+        ]
+      },
+      {
+        "id": "art_02",
+        "title": "Native Instruments Reaktor 6 Update",
+        "subtitle": "Don't miss this update full of surprises to the already amazing Reaktor's user library.",
+        "description": "",
+        "showcase": false,
+        "images": [
+          {
+            "id": "01",
+            "src": "./images/articles/reaktor.jpg",
+            "alt": "This is a fake link"
+          }
+        ]
+      },
+      {
+        "id": "art_03",
+        "title": "Mick Gordon",
+        "subtitle": "Discover the workflow Mick has used to produce the astonishing soundtrack of Doom Eternal, the videogame of the year.",
+        "description": "art_03",
+        "showcase": false,
+        "images": [
+          {
+            "id": "01",
+            "src": "./images/articles/Mick-Gordon.jpg",
+            "alt": "This is a fake link"
+          }
+        ]
+      }
+
+    ]
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "head": {
+    "title": "Page Not Found - FutArtistic Hub",
+    "description": "This web site is meant for a community of people interested in technology, art and how technology can help rethink and renew art, hopefully reaching new languages and new ways of expression.",
+    "keywords": "art, technology, future, artists, photographers, painters, developers, art-lovers, future-lovers, technology-lovers"
+  },
+  "body": {
+    "title": "The page you were looking for is not here..",
+    "subtitle": "... but don't panic!",
+    "content": "<p>You are not on the page you meant to be. That page is either gone or something else happened, so you've got a <strong>404 Page Not Found</strong> message.</p>\n<p>Well, I have some suggestions to get you back on track:<br/>\nYou can go to the <a href=\"index.html\">Home Page</a> and start from there.<br/>\nr, visit one of the categories you see in the menu.<br/>\nEven better, you can <a href=\"about.html#contact_us\">send us a message</a> telling us about the problem you've had and we promise we will fix it in a blink of an eye.\n</p>\n<p>Whatever action you choose to do, we apologize for the inconvenience.</p>"
+  }
+}
