@@ -4,6 +4,7 @@ Final project for the course Web Development - BSc Computer Science, Machine Lea
 Technologies used:
 
 Handlebars
+
 After having studied Handlebars in this course (Web Development), which was a completely new topic for me, I was wondering how I could apply those concepts to a real case.
 This project gave me the occasion of thinking in practical terms on how I could make good use of Handlebars, for not only a mere substitution of a few strings.
 
@@ -18,6 +19,7 @@ Using a server side language to build a web api, to server such json documents, 
 Again, Javascript had everything I needed to do the job. Of course, doing this way the json documents are static documents, already prepared and residing on the server. However, replacing these json files with a web service, which returns a json document dynamically built based on the content of a database, would make this mechanism much closer to a real case.
 
 Asynchronous Javascript
+
 While writing the javascript code to retrieve the json documents, I found an unexpected issue that needed to be solved.
 It happened that I called the jQuery method $.get(...) to retrieve the json file and populate a variable called jsonContent. The following line in the code tried to access the content of jsonContent variable just (really?!) created by the previous line of code, but found it empty even though the $.get() call had not failed.
 
@@ -32,6 +34,7 @@ This indeed solved the problem.
 The downside of this method is that it has been introduced in ECMAScript 2017 Language Specification, thus it is not supported by browsers prior 2017. Opting for the implementation of the done() and fail() delegates of the $.get() function, would have wider support from the browsers. However, I chose the method based on async/await because I am interested in expanding my knowledge about the language, using features i had never used before and, although browser compatibility is a problem that every web developer has to face, learning new aspects of the language is also equally important.
 
 Sass and SCSS
+
 I had heard that Sass and SCSS are helpful tools to manage css documents, but I had never tried them. This was the right occasion to do so.
 
 The IDE I use for web development is JetBrain WebStorm. It supports Sass and SCSS, but requires an extension to be installed, necessary to compile the Sass/SCSS code into css on the fly. Following the instructions on the WebStorm website, I easily manage to have my IDE able to compile Sass/SCSS code.
